@@ -17,6 +17,11 @@ class HelloWorld {
             System.out.println(" Number of tries: " + i);
                 break;
             }
+            if(Guess < randomnumber){
+                System.out.println("Higher");
+            } else if(Guess > randomnumber){
+                System.out.println("Lower");
+            }
         }
     }
 }
