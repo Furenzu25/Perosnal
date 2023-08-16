@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Random;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner New = new Scanner(System.in);
+        Random rand = new Random();
+        int randomnumber = rand.nextInt(100) + 1;
+        
+        for(int i = 1; i <= 1000; i++){
+        System.out.print("Guess the number: ");
+        int Guess = New.nextInt();
+            if(randomnumber == Guess){
+            System.out.println("You guessed it right!");
+            System.out.println("Number of tries: " + i);
+                break;
+            }
+        }
+    }
+}
