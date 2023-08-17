@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class E_IntegerPair{
+    public static void main(String[] args){
+        //scanner
+        Scanner New = new Scanner(System.in);
+        //array list initiation
+        ArrayList<Integer> GreaterSmaller = new ArrayList<Integer>();
+        System.out.print("Range of array: ");
+        //storing the range for the for loop later
+        int Range = New.nextInt();
+        //for loop
+        for(int i = 0; i < Range; i++){
+            System.out.print("Input the desired numbers: ");
+            int inPut = New.nextInt();
+            GreaterSmaller.add(inPut);
+            if(inPut == 0){
+                break;
+            }
+        }
+        for(int p = 0; p > GreaterSmaller.size){
+            for(int j = 0; j < GreaterSmaller.size){
+                GreaterSmaller.remove(p);
+                GreaterSmaller.remove(j);
+            }
+        }
+        System.out.print(GreaterSmaller);
+    }
+}
