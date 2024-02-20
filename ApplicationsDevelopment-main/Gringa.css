@@ -1,60 +1,77 @@
 * {
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    margin:0
-    background-size: cover;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-    display: flex;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(gringacafe.jpg);
-    align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  display: flex;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(gringacafe.jpg);
+  align-items: center;
 }
+
 .navbar {
-background-color: transparent;
-padding: 20px;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
+  background-color: transparent;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
 justify-content: space-between;
-align-items: center;
+  align-items: center;
 }
-    
+
 .cafe-name {
 color: white;
+
 font-size: 50px; 
 }
-    
-.navbar ul {
-list-style-type: none;
+
+
+.navbar ul {list-style-type: none;
 display: flex;
 }
-    
+
 .navbar li {
 margin-right: 20px;
 }
+
 th, td{
 padding: 4px;
 border: 1px solid #ddd;
 position: relative;
 border-spacing: 50px;
-left: 50%;
 color: white;
-width: calc(50% - 40px);
-float: left;
 font-size: 20px;
 inline-size: 470px;
-}
-td{
 text-align: center;
 }
-table{
-  spaci
+.table-container {
+margin: 0 auto;
+width: 80%; 
+}
+#menu {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+  flex: 20;
+}
+
+.menu-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table-container {
+  margin: 20px; /* Add some margin between tables if needed */
 }

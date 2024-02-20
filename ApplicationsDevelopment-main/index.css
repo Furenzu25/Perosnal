@@ -77,6 +77,9 @@ img{
 .navbar .flex{
     justify-content: space-between;
 }
+.navbar li a{
+    
+}
 .container{
     max-width: 2000px;
     margin: 0 auto;

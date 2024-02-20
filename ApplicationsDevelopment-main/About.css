@@ -114,6 +114,7 @@ img{
     align-items: center;
 }
 .grid-container .item1{
+    flex:13;
     margin-left: 250px;
     margin-right: 250px;
     text-align: center;
@@ -122,6 +123,7 @@ img{
     line-height: 2.5;
 }
 .grid-container .item2{
+    flex:13;
     text-align: center;
     margin-left: 300px;
     margin-right: 300px;
