@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  html{
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(midnightcafebg.jpg);
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar {
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cafe-name {
+  color: white;
+  
+  font-size: 50px; 
+  }
+  
+  
+  .navbar ul {list-style-type: none;
+  display: flex;
+  }
+  
+  .navbar li {
+  margin-right: 20px;
+  }
+  
+  th, td{
+  padding: 4px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-spacing: 50px;
+  color: white;
+  font-size: 20px;
+  inline-size: 470px;
+  text-align: center;
+  }
+  .table-container {
+  margin: 0 auto;
+  width: 80%; 
+  }
+  #menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    flex: 20;
+  }
+  
+  .menu-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .table-container {
+    margin: 20px; 
+  }

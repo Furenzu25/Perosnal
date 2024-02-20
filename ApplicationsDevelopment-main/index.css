@@ -27,6 +27,8 @@ p{
     margin: 10px 0;
 }
 img{
+
+    max-width: 100%;
     border-radius: 50%;
 }
 .navbar{
@@ -76,9 +78,6 @@ img{
 }
 .navbar .flex{
     justify-content: space-between;
-}
-.navbar li a{
-    
 }
 .container{
     max-width: 2000px;
@@ -130,25 +129,30 @@ img{
   text-decoration: none;
   color: inherit;
 }
-
-/* CSS for larger screens */
-.grid-container .item1, .grid-container .item2, .grid-container .item3 {
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-/* CSS for screens less than 800px wide */
 @media (max-width: 800px) {
-    .grid-container .item1, .grid-container .item2, .grid-container .item3 {
-        margin-left: 50px;
-        margin-right: 50px;
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .navbar{
+        height: auto;
+    }
+    .navbar h1{
+        font-size: 1.5em;
+        margin-botom: 10px;
     }
 }
 
-/* CSS for screens less than 500px wide */
+/* CSS for mobile phones (max-width: 500px) */
 @media (max-width: 500px) {
-    .grid-container .item1, .grid-container .item2, .grid-container .item3 {
-        margin-left: 20px;
-        margin-right: 20px;
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }.navbar{
+        height: auto;
+    }
+    .navbar h1{
+        font-size: 1.5em;
+        margin-botom: 10px;
     }
 }

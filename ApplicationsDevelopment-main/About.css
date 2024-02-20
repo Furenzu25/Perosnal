@@ -136,24 +136,4 @@ img{
     line-height: 2.5;
     margin-bottom: auto;
 }
-/* CSS for larger screens */
-.grid-container .item1, .grid-container .item2, .grid-container .item3 {
-    margin-left: 300px;
-    margin-right: 300px;
-}
 
-/* CSS for screens less than 800px wide */
-@media (max-width: 800px) {
-    .grid-container .item1, .grid-container .item2, .grid-container .item3 {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-
-/* CSS for screens less than 500px wide */
-@media (max-width: 500px) {
-    .grid-container .item1, .grid-container .item2, .grid-container .item3 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
